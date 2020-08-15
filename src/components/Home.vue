@@ -23,7 +23,7 @@ export default {
         Home: HomeTab,
         Rooms: RoomsTab,
         Freinds: FreindsTab
-      },
+      }
       // tabs: [
       //   {
       //     icon: this.md() ? null : "fa-facebook-messenger",

@@ -16,7 +16,9 @@ import io from 'socket.io-client';
 
 Vue.use(VueOnsen);
 
-const socket = io('http://localhost:8081');
+// const socket = io('http://localhost:8081');
+const socket = io('ws://chat.vms.ng');
+
 Vue.use(VueSocketIOExt, socket);
 
 Vue.filter('mDate', (date) => {

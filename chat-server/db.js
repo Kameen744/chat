@@ -1,15 +1,15 @@
 const sqlite3 = require('sqlite3').verbose();
 // const Promise = require('bluebird');
-
 class AppDB {
   constructor(databasePath) {
     this.db = new sqlite3.Database(databasePath, (err) => {
       if (err) {
         console.log('Could not connect to database', err)
-      } else {
-        console.log('Connected to database')
       }
-    })
+      // else {
+      //   console.log('Connected to database')
+      // }
+    });
   }
 
   run(sql, params = []) {
